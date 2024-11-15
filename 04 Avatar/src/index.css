@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* Styles for the avatar container */
+.avatar-set {
+  display: flex;
+  gap: 16px; /* Space between avatars */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allow absolute positioning */
+  top: 50%; /* Move to the vertical center */
+  left: 50%; /* Move to the horizontal center */
+
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjust for the element's own dimensions */
+}
+
+/* Styles for each avatar */
+.avatar {
+  width: 70px; /* Adjusts avatar size */
+  height: 70px;
+  border-radius: 50%; /* Makes avatars circular */
+  overflow: hidden; /* Ensures image fits within the circular border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+  background-color: white;
+  border: 2px solid black;
+}
+
+.avatar:hover {
+  transform: rotate(-15deg); /* Slight rotation */
+}
+
+.avatar-img {
+  width: 100%; /* Ensures image covers the entire avatar container */
+  height: 100%;
+  object-fit: cover; /* Maintains image aspect ratio while covering */
+}
+
+body {
+  background-color: #f7faa4;
+}
