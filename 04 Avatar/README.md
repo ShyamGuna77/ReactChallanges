@@ -25,5 +25,7 @@ This application allows users to select from multiple avatars. Instead of render
 
 4. **Update the Component**:
    - Replace hardcoded `<Avatar />` elements with the dynamically generated list.
+     
+
 
 **The  Starter code Available in [codesandbox](https://codesandbox.io/p/sandbox/distracted-hertz-7qvhkn)
